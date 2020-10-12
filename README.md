@@ -1,27 +1,26 @@
-# FormsKata
+# 📝 Forms Kata 📝
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.2.
+You just came into a new team after their only frontend developer left.
+To make things worse, your product owner is not happy: Your team wanted to ship a customer
+registration form, but most of the features are actually missing.
 
-## Development server
+The codebase is somehow working, but using template driven forms and no really sophisticated validation.
+After the initial discussion with the product owner, it was agreed that you are allowed to refactor the
+form under one condition: You will not introduce any new bugs and deliver additional features as soon as possible.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## ⚔️ The challenge:
 
-## Code scaffolding
+1. Write tests for the existing implementation. As you want to change the underlying implementation, do not
+   write tests that couple behaviour on implementation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+2. Replace the template driven forms with reactive forms without breaking any tests.
 
-## Build
+3. Add additional validation features, along with tests
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+4. Build the form from a configuration, e.g. dynamic forms.
 
-## Running unit tests
+## 👾 The code
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- app.component is the only component used right now
+- there is one quite badly written test that uses the right api - refactoring this one is recommended
+- Most of the code is quite bad, don't be afraid to change it - after you added a test that allows you to be certain that it still works
