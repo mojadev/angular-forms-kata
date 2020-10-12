@@ -15,9 +15,16 @@ form under one condition: You will not introduce any new bugs and deliver additi
 
 2. Replace the template driven forms with reactive forms without breaking any tests.
 
-3. Add additional validation features, along with tests
+3. Add additional validation features, along with tests:
+
+   - Show an error message if the name contains numbers
+   - Show an error message if the mail format is not correct
+   - Only allow phone numbers in the format '\d{4}/\d{4,}' (or your local style, whatever you want)
+   - Allow non-latin names
 
 4. Build the form from a configuration, e.g. dynamic forms.
+
+(Bonus) 5. Add a button that allows to create more than one customer by duplicating the given form
 
 ## 👾 The code
 
